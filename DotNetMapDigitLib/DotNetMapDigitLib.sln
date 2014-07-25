@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapdigit.Ajax", "Mapdigit.Ajax\Mapdigit.Ajax.csproj", "{D6708EF3-0CED-4430-8109-921A37A4BE31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapdigit.Drawing", "Mapdigit.Drawing\Mapdigit.Drawing.csproj", "{5EBCFBE0-8B60-49E9-A777-8A72BAD7DABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapdigit.Gis", "Mapdigit.Gis\Mapdigit.Gis.csproj", "{15AE74D8-3CC8-4F78-8734-A058A7063774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapdigit.Network", "Mapdigit.Network\Mapdigit.Network.csproj", "{549EBCBD-8420-440D-BCA2-729D0CF8FC70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapdigit.Rms", "Mapdigit.Rms\Mapdigit.Rms.csproj", "{4B740F47-6DE0-4443-A0E3-9C6234013E21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapdigit.Util", "Mapdigit.Util\Mapdigit.Util.csproj", "{91C13559-0EE5-46E1-825E-FDF272BB009C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapDemo", "MapTileDownloader\MapDemo.csproj", "{53723D5C-0DE2-490F-8AAB-7E397246445E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics2DExample", "Graphics2DExample\Graphics2DExample.csproj", "{C204DE53-9E22-4CA0-B07E-ABDA8FDEDAA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6708EF3-0CED-4430-8109-921A37A4BE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6708EF3-0CED-4430-8109-921A37A4BE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6708EF3-0CED-4430-8109-921A37A4BE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6708EF3-0CED-4430-8109-921A37A4BE31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBCFBE0-8B60-49E9-A777-8A72BAD7DABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBCFBE0-8B60-49E9-A777-8A72BAD7DABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBCFBE0-8B60-49E9-A777-8A72BAD7DABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBCFBE0-8B60-49E9-A777-8A72BAD7DABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AE74D8-3CC8-4F78-8734-A058A7063774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AE74D8-3CC8-4F78-8734-A058A7063774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AE74D8-3CC8-4F78-8734-A058A7063774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AE74D8-3CC8-4F78-8734-A058A7063774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549EBCBD-8420-440D-BCA2-729D0CF8FC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549EBCBD-8420-440D-BCA2-729D0CF8FC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549EBCBD-8420-440D-BCA2-729D0CF8FC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549EBCBD-8420-440D-BCA2-729D0CF8FC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B740F47-6DE0-4443-A0E3-9C6234013E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B740F47-6DE0-4443-A0E3-9C6234013E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B740F47-6DE0-4443-A0E3-9C6234013E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B740F47-6DE0-4443-A0E3-9C6234013E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C13559-0EE5-46E1-825E-FDF272BB009C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C13559-0EE5-46E1-825E-FDF272BB009C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C13559-0EE5-46E1-825E-FDF272BB009C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C13559-0EE5-46E1-825E-FDF272BB009C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53723D5C-0DE2-490F-8AAB-7E397246445E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53723D5C-0DE2-490F-8AAB-7E397246445E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53723D5C-0DE2-490F-8AAB-7E397246445E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53723D5C-0DE2-490F-8AAB-7E397246445E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C204DE53-9E22-4CA0-B07E-ABDA8FDEDAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C204DE53-9E22-4CA0-B07E-ABDA8FDEDAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C204DE53-9E22-4CA0-B07E-ABDA8FDEDAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C204DE53-9E22-4CA0-B07E-ABDA8FDEDAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

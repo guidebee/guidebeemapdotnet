@@ -1,0 +1,14 @@
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\bin\Debug\Mapdigit.Rms.dll
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\bin\Debug\Mapdigit.Rms.pdb
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\ResolveAssemblyReference.cache
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\Mapdigit.Rms.dll
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\Mapdigit.Rms.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\bin\Debug\Mapdigit.Rms.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\bin\Debug\Mapdigit.Rms.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\ResolveAssemblyReference.cache
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\Mapdigit.Rms.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\Mapdigit.Rms.pdb
+D:\Temp\DotNetMapDigitLib\Mapdigit.Rms\bin\Debug\Mapdigit.Rms.dll
+D:\Temp\DotNetMapDigitLib\Mapdigit.Rms\bin\Debug\Mapdigit.Rms.pdb
+D:\Temp\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\Mapdigit.Rms.dll
+D:\Temp\DotNetMapDigitLib\Mapdigit.Rms\obj\Debug\Mapdigit.Rms.pdb

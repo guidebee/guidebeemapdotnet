@@ -1,0 +1,17 @@
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.dll
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.pdb
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\ResolveAssemblyReference.cache
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\Mapdigit.Util.dll
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\Mapdigit.Util.pdb
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.XML
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.XML
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\ResolveAssemblyReference.cache
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\Mapdigit.Util.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\Mapdigit.Util.pdb
+D:\Temp\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.XML
+D:\Temp\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.dll
+D:\Temp\DotNetMapDigitLib\Mapdigit.Util\bin\Debug\Mapdigit.Util.pdb
+D:\Temp\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\Mapdigit.Util.dll
+D:\Temp\DotNetMapDigitLib\Mapdigit.Util\obj\Debug\Mapdigit.Util.pdb

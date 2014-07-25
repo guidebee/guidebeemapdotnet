@@ -1,0 +1,1038 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mapdigit.Util</name>
+    </assembly>
+    <members>
+        <member name="T:Mapdigit.Util.DataReader">
+            <summary>
+            read big-endian data format.mainly be used as a data adapter for
+            read java-formated data.
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.DataReader.IsNet">
+            <summary>
+             is the data format java or windows( big endian or little endian).
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.DataReader.ReadDouble(System.IO.BinaryReader)">
+            <summary>
+            Read a double value.
+            </summary>
+            <param name="reader">The binary reader.</param>
+            <returns>a double value</returns>
+        </member>
+        <member name="M:Mapdigit.Util.DataReader.ReadLong(System.IO.BinaryReader)">
+            <summary>
+            Reads the long.
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns>a long value</returns>
+        </member>
+        <member name="M:Mapdigit.Util.DataReader.ReadInt(System.IO.BinaryReader)">
+            <summary>
+            Reads the int.
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns>a int value</returns>
+        </member>
+        <member name="M:Mapdigit.Util.DataReader.ReadShort(System.IO.BinaryReader)">
+            <summary>
+            Reads the short.
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns>a short value</returns>
+        </member>
+        <member name="M:Mapdigit.Util.DataReader.ReadString(System.IO.BinaryReader)">
+            <summary>
+            Reads the string.
+            </summary>
+            <param name="reader">The reader.</param>
+            <returns>a string value</returns>
+        </member>
+        <member name="M:Mapdigit.Util.DataReader.Seek(System.IO.BinaryReader,System.Int64)">
+            <summary>
+            Seeks the specified reader.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="offset">The offset.</param>
+        </member>
+        <member name="M:Mapdigit.Util.DataReader.Write7BitEncodedInt(System.Int32,System.IO.BinaryWriter)">
+            <summary>
+            Write7s the bit encoded int.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="T:Mapdigit.Util.DataWriter">
+            <summary>
+            write big-endian data format.mainly be used as a data adapter for
+            write java-formated data.
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.DataWriter.IsNet">
+            <summary>
+              is the data format java or windows( big endian or little endian).
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.DataWriter.WriteLong(System.IO.BinaryWriter,System.Int64)">
+            <summary>
+            write the long.
+            </summary>
+            <param name="writer">The write.</param>
+            <param name="value">the long value</param>
+            <returns>a long value</returns>
+        </member>
+        <member name="T:Mapdigit.Util.Html2Text">
+            <summary>
+            This class convert html string to plain text.
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.RemoveDoubleBackSlash(System.String)">
+            <summary>
+            Remove double "\\" and change to one "\"
+            </summary>
+            <param name="source">the string need to change</param>
+            <returns>the result string</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.ConvertUTF8(System.String)">
+            <summary>
+            convert \\uxxxx to it's string format
+            </summary>
+            <param name="source">string to convert..</param>
+            <returns>result string</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.Encodeutf8(System.Byte[])">
+            <summary>
+            convert to utf8 string
+            </summary>
+            <param name="b">byte array.</param>
+            <returns>result string</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.UTF8Decoder(System.String)">
+            <summary>
+             a simple utf8 string decoder.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.Convert(System.String)">
+            <summary>
+            Convert html to plain text
+            </summary>
+            <param name="source">HTML string.</param>
+            <returns>plain text</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.GetTag(Mapdigit.Util.StringGetter)">
+            <summary>
+            Gets the tag.
+            </summary>
+            <param name="r">The r.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.GetSpecial(Mapdigit.Util.StringGetter)">
+            <summary>
+            Gets the special.
+            </summary>
+            <param name="r">The r.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.IsTag(System.String,System.String)">
+            <summary>
+            Determines whether the specified s1 is tag.
+            </summary>
+            <param name="s1">The s1.</param>
+            <param name="s2">The s2.</param>
+            <returns>
+            	<c>true</c> if the specified s1 is tag; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.ConvertTag(System.String)">
+            <summary>
+            Converts the tag.
+            </summary>
+            <param name="t">The t.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.IsWhitespace(System.Char)">
+            <summary>
+            Determines whether the specified ch is whitespace.
+            </summary>
+            <param name="ch">The ch.</param>
+            <returns>
+            	<c>true</c> if the specified ch is whitespace; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Mapdigit.Util.Html2Text.IsLetter(System.Char)">
+            <summary>
+            Determines whether the specified ch is letter.
+            </summary>
+            <param name="ch">The ch.</param>
+            <returns>
+            	<c>true</c> if the specified ch is letter; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Mapdigit.Util.StringGetter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mapdigit.Util.StringGetter"/> class.
+            </summary>
+            <param name="s">String providing the character stream.</param>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.EnsureOpen">
+            <summary>
+            Check to make sure that the stream has not been closed 
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.Read">
+            <summary>
+            Reads a single character.
+            </summary>
+            <returns>The character read, or -1 if the end of the stream has been
+                         reached</returns>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.Skip(System.Int64)">
+             <summary>
+             Skips the specified number of characters in the stream. Returns
+             the number of characters that were skipped.
+            
+             The ns parameter may be negative, even though the
+             skip method of the Reader superclass throws
+             an exception in this case. Negative values of ns cause the
+             stream to skip backwards. Negative return values indicate a skip
+             backwards. It is not possible to skip backwards past the beginning of
+             the string.
+            
+             If the entire string has been read or skipped, then this method has
+             no effect and always returns 0.
+             </summary>
+             <param name="ns">The ns.</param>
+             <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.Ready">
+            <summary>
+            Tells whether this stream is ready to be read.
+            </summary>
+            <returns>True if the next read() is guaranteed not to block for input</returns>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.MarkSupported">
+            <summary>
+            Tells whether this stream supports the mark() operation, which it does.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.Mark(System.Int32)">
+            <summary>
+            Marks the present position in the stream.  Subsequent calls to reset()
+            will reposition the stream to this point.
+            </summary>
+            <param name="readAheadLimit">The read ahead limit.</param>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.Reset">
+            <summary>
+            Resets the stream to the most recent mark, or to the beginning of the
+            string if it has never been marked.
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.StringGetter.Close">
+            <summary>
+            Closes this instance.
+            </summary>
+        </member>
+        <member name="T:Mapdigit.Util.Log">
+            <summary>
+            Pluggable logging framework that allows a developer to log into storage
+            using the file connector API. It is highly recommended to use this
+            class coupled with Netbeans preprocessing tags to reduce its overhead
+            completely in runtime.
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.Log.Debug">
+            <summary>
+             Constant indicating the logging level Debug is the default and the
+            lowest level followed by info, warning and error
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.Log.Info">
+            <summary>
+            Constant indicating the logging level Debug is the default and the
+            lowest level followed by info, warning and error
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.Log.Warning">
+            <summary>
+             Constant indicating the logging level Debug is the default and the
+            lowest level followed by info, warning and error
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.Log.Error">
+            <summary>
+             Constant indicating the logging level Debug is the default and the
+            lowest level followed by info, warning and error
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.Log.Install(Mapdigit.Util.Log)">
+            <summary>
+            Installs a log subclass that can replace the logging destination/behavior
+            </summary>
+            <param name="newInstance">The new instance.</param>
+        </member>
+        <member name="M:Mapdigit.Util.Log.P(System.String)">
+            <summary>
+             Default println method invokes the print instance method, uses DEBUG level
+            </summary>
+            <param name="text"> text to print</param>
+        </member>
+        <member name="M:Mapdigit.Util.Log.P(System.String,System.Int32)">
+             <summary>
+            Default println method invokes the print instance method, uses given level
+             </summary>
+             <param name="text">The text.</param>
+             <param name="level">The level,one of DEBUG, INFO, WARNING, ERROR</param>
+        </member>
+        <member name="M:Mapdigit.Util.Log.SetLevel(System.Int32)">
+            <summary>
+            Sets the logging level for printing log details, the lower the value
+            the more verbose would the printouts be
+            </summary>
+            <param name="level">The level,one of DEBUG, INFO, WARNING, ERROR</param>
+        </member>
+        <member name="M:Mapdigit.Util.Log.GetLevel">
+            <summary>
+            Returns the logging level for printing log details, the lower the value
+            the more verbose would the printouts be
+            </summary>
+            <returns>one of DEBUG, INFO, WARNING, ERROR</returns>
+        </member>
+        <member name="F:Mapdigit.Util.Log.level">
+            <summary>
+            the level of logging.
+            </summary>
+            
+        </member>
+        <member name="M:Mapdigit.Util.Log.Print(System.String,System.Int32)">
+            <summary>
+            Prints the specified text.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="debugLevel">The level.</param>
+        </member>
+        <member name="M:Mapdigit.Util.Log.GetThreadAndTimeStamp">
+            <summary>
+            Returns a simple string containing a timestamp and thread name..
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mapdigit.Util.MathEx">
+            <summary>
+            The class MathEx contains methods for performing basic numeric operations.
+            It's an extention of java.lang.Math, provides more math functions.
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.MathEx.Precision">
+            <summary>
+            The double value limit used to termiate a calcuation.
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.MathEx.Pi">
+            <summary>
+            The double value that is closer than any other to pi, the ratio of the
+            circumference of a circle to its diameter.
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.MathEx.E">
+            <summary>
+            The double value that is closer than any other to e, the base of the
+            natural logarithms.
+            </summary>
+        </member>
+        <member name="F:Mapdigit.Util.MathEx.LoGdiv2">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Abs(System.Double)">
+            <summary>
+            Returns the absolute value of a double value.
+            </summary>
+            <remarks>
+            If the argument is not negative, the argument is returned.
+            If the argument is negative, the negation of the argument is returned.
+            Special cases:
+            <ul><li>If the argument is positive zero or negative zero, the result
+            is positive zero.</li>
+            <li>If the argument is infinite, the result is positive infinity.</li>
+            <li>If the argument is NaN, the result is NaN.</li> </ul>
+            </remarks>
+            <param name="a">a double value</param>
+            <returns>the absolute value of the argument.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Abs(System.Single)">
+             <summary>
+             Returns the absolute value of a float value.
+             </summary>
+             <remarks>
+             If the argument is not negative, the argument is returned.
+             If the argument is negative, the negation of the argument is returned.
+             Special cases:
+             <ul><li>If the argument is positive zero or negative zero, the
+             result is positive zero.</li>
+             <li>If the argument is infinite, the result is positive infinity.</li>
+             <li>If the argument is NaN, the result is NaN.</li>  </ul>
+            </remarks>
+             <param name="a">a float value</param>
+             <returns>the absolute value of the argument</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Abs(System.Int32)">
+            <summary>
+            Returns the absolute value of an int value.
+            </summary>
+            <remarks>
+            If the argument is not negative, the argument is returned.
+            If the argument is negative, the negation of the argument is returned.
+             remember that if the argument is equal to the value of
+            Integer.MIN_VALUE, the most negative representable
+            int value, the result is that same value, which is
+            negative.</remarks>
+            <param name="a">a int value</param>
+            <returns>the absolute value of the argument.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Abs(System.Int64)">
+            <summary>
+            Returns the absolute value of a long value.
+            </summary>
+            <remarks>
+            If the argument is not negative, the argument is returned.
+            If the argument is negative, the negation of the argument is returned.
+             remember that if the argument is equal to the value of
+            Long.MIN_VALUE, the most negative representable
+            long value, the result is that same value, which is
+            negative.
+            </remarks>
+            <param name="a">a long value</param>
+            <returns>the absolute value of the argument</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Ceil(System.Double)">
+            <summary>
+            Returns the smallest (closest to negative infinity)
+            </summary>
+            <remarks>
+            double value that is not less than the argument and is
+            equal to a mathematical integer. Special cases:
+            <ul><li>If the argument value is already equal to a mathematical
+            integer, then the result is the same as the argument.</li>
+            <li>If the argument is NaN or an infinity or positive zero or negative
+            zero, then the result is the same as the argument.</li>
+            <li>If the argument value is less than zero but greater than -1.0,
+            then the result is negative zero.</li> </ul>
+            Remember that the value of Math.ceil(x) is exactly the
+            value of -Math.floor(-x).</remarks>
+            <param name="a">a double value.</param>
+            <returns>the smallest (closest to negative infinity) double value that is
+            not less than the argument and is equal to a mathematical integer.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Cos(System.Double)">
+            <summary>
+            Returns the trigonometric cosine of an angle. 
+            Special case:
+            </summary>
+            <remarks>
+            If the argument is NaN or an infinity, then the
+            result is NaN.
+            </remarks>
+            <param name="a">an angle, in radians.</param>
+            <returns> the cosine of the argument.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Floor(System.Double)">
+            <summary>
+            Returns the largest (closest to positive infinity)
+            </summary>
+            <remarks>
+            double value that is not greater than the argument and
+            is equal to a mathematical integer. Special cases:
+            <ul><li>If the argument value is already equal to a mathematical
+            integer, then the result is the same as the argument.</li>
+            <li>If the argument is NaN or an infinity or positive zero or
+            negative zero, then the result is the same as the argument.</li> </ul>
+            </remarks>
+            <param name="a">a double value.</param>
+            <returns>the largest (closest to positive infinity) double value that is
+            not greater than the argument and is equal to a mathematical integer.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Max(System.Double,System.Double)">
+            <summary>
+            Returns the greater of two double values.  
+            </summary>
+            <remarks>
+            That is, the
+            result is the argument closer to positive infinity. If the
+            arguments have the same value, the result is that same value. If
+            either value is NaN, then the result is NaN.
+            Unlike the the numerical comparison operators, this method considers
+            negative zero to be strictly smaller than positive zero. If one
+            argument is positive zero and the other negative zero, the result
+            is positive zero.
+            </remarks>
+            <param name="a">a double value.</param>
+            <param name="b">a double value.</param>
+            <returns>the larger of a and b.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Max(System.Single,System.Single)">
+            <summary>
+            Returns the greater of two float values. 
+            </summary>
+            <remarks>
+             That is, the result is the argument closer to positive infinity. If the
+            arguments have the same value, the result is that same value. If
+            either value is NaN, then the result is NaN.
+            Unlike the the numerical comparison operators, this method considers
+            negative zero to be strictly smaller than positive zero. If one
+            argument is positive zero and the other negative zero, the result
+            is positive zero.
+            </remarks>
+            <param name="a">a float value</param>
+            <param name="b">a float value.</param>
+            <returns>the larger of a and b.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Max(System.Int32,System.Int32)">
+            <summary>
+            Returns the greater of two int values.
+            </summary>
+            <remarks>
+             That is, the result is the argument closer to the value of
+            Integer.MAX_VALUE. If the arguments have the same value,
+            the result is that same value.
+            </remarks>
+            <param name="a">a int value</param>
+            <param name="b">a int value.</param>
+            <returns>the larger of a and b.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Max(System.Int64,System.Int64)">
+            <summary>
+            Returns the greater of two long values.
+            </summary>
+            <remarks>
+             That is, the result is the argument closer to the value of
+            Long.MAX_VALUE. If the arguments have the same value,
+            the result is that same value.
+            </remarks>
+            <param name="a"> a long value</param>
+            <param name="b"> a long value</param>
+            <returns>the larger of a and b</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Min(System.Double,System.Double)">
+            <summary>
+            Returns the smaller of two double values.  
+            </summary>
+            <remarks>
+            That is, the result is the value closer to negative infinity. If the arguments have
+            the same value, the result is that same value. If either value
+            is NaN, then the result is NaN.  Unlike the
+            the numerical comparison operators, this method considers negative zero
+            to be strictly smaller than positive zero. If one argument is
+            positive zero and the other is negative zero, the result is negative
+            zero.
+            </remarks>
+            <param name="a"> a double value</param>
+            <param name="b"> a double value</param>
+            <returns>the smaller of a and b.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Min(System.Single,System.Single)">
+            <summary>
+            Returns the smaller of two double values. 
+            </summary>
+            <remarks>
+             That is, the result is the value closer to negative infinity. If the arguments have
+            the same value, the result is that same value. If either value
+            is NaN, then the result is NaN.  Unlike the
+            the numerical comparison operators, this method considers negative zero
+            to be strictly smaller than positive zero. If one argument is
+            positive zero and the other is negative zero, the result is negative
+            zero.
+            </remarks>
+            <param name="a">a float value</param>
+            <param name="b">a float value.</param>
+            <returns>the smaller of a and b.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Min(System.Int32,System.Int32)">
+             <summary>
+             Returns the smaller of two int values.
+             </summary>
+             <remarks>
+              That is, the
+             result the argument closer to the value of Integer.MIN_VALUE.
+             If the arguments have the same value, the result is that same value.
+            </remarks>
+             <param name="a">a int value</param>
+             <param name="b">a int value.</param>
+             <returns>the smaller of a and b.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Min(System.Int64,System.Int64)">
+            <summary>
+            Returns the smaller of two long values. 
+            </summary>
+            <remarks>
+            That is, the
+            result is the argument closer to the value of
+            Long.MIN_VALUE. If the arguments have the same value,
+            the result is that same value.
+            </remarks>
+            <param name="a">a long value</param>
+            <param name="b">a long value</param>
+            <returns>the smaller of a and b</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Sin(System.Double)">
+            <summary>
+            Returns the trigonometric sine of an angle.  
+            </summary>
+            <remarks>
+            Special cases:
+            <ul><li>If the argument is NaN or an infinity, then the
+            result is NaN.</li>
+            <li>If the argument is positive zero, then the result is
+            positive zero; if the argument is negative zero, then the
+            result is negative zero.</li>  </ul>
+            </remarks>
+            <param name="a">an angle, in radians.</param>
+            <returns>the sine of the argument</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Sqrt(System.Double)">
+            <summary>
+            Returns the correctly rounded positive square root of a
+            double value.
+            </summary>
+            <remarks>
+            Special cases:
+            <ul><li>If the argument is NaN or less than zero, then the result
+            is NaN.</li>
+            <li>If the argument is positive infinity, then the result is positive
+            infinity.</li>
+            <li>If the argument is positive zero or negative zero, then the
+            result is the same as the argument.</li> </ul>
+            </remarks>
+            <param name="a">a double value</param>
+            <returns>the positive square root of a. If the argument is NaN or less
+            than zero, the result is NaN.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Tan(System.Double)">
+             <summary>
+            Returns the trigonometric tangent of an angle. 
+             </summary>
+             <remarks>
+              Special cases:
+             <ul><li>If the argument is NaN or an infinity, then the result
+             is NaN.</li>
+             <li>If the argument is positive zero, then the result is
+             positive zero; if the argument is negative zero, then the
+             result is negative zero</li>  </ul>
+             </remarks>
+             <param name="a">an angle, in radians.</param>
+             <returns>the tangent of the argument.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.ToDegrees(System.Double)">
+             <summary>
+            Converts an angle measured in radians to the equivalent angle
+              measured in degrees.
+             </summary>
+             <param name="angrad">an angle, in radians.</param>
+             <returns>the measurement of the angle angrad in degrees.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.ToRadians(System.Double)">
+             <summary>
+            Converts an angle measured in degrees to the equivalent angle
+             measured in radians.
+             </summary>
+             <param name="angdeg">an angle, in degrees.</param>
+             <returns>the measurement of the angle angrad in radians.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Atan(System.Double)">
+             <summary>
+            Returns the arc tangent of an angle, in the range of -<i>pi</i>/2
+             through <i>pi</i>/2.  
+             </summary>
+             <remarks>
+             Special cases:  <ul><li>If the argument is NaN,
+             then the result is NaN.</li>
+             <li>If the argument is zero, then the result is a zero with the
+             same sign as the argument. </li> </ul> 
+             A result must be within 1 ulp of the correctly rounded result.  Results
+             must be semi-monotonic.
+             </remarks>
+             <param name="a">the value whose arc tangent is to be returned.</param>
+             <returns>the arc tangent of the argument.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Atan2(System.Double,System.Double)">
+             <summary>
+            Converts rectangular coordinates (x,y)
+             to polar (r,<i>theta</i>).
+             </summary>
+             <remarks>
+             This method computes the phase <i>theta</i> by computing an arc tangent
+             of y/x in the range of -<i>pi</i> to <i>pi</i>. Special
+             cases:
+             <ul><li>If either argument is NaN, then the result is NaN.</li>
+             <li>If the first argument is positive zero and the second argument
+             is positive, or the first argument is positive and finite and the
+             second argument is positive infinity, then the result is positive
+             zero.</li>
+             <li>If the first argument is negative zero and the second argument
+             is positive, or the first argument is negative and finite and the
+             second argument is positive infinity, then the result is negative zero.</li>
+             <li>If the first argument is positive zero and the second argument
+             is negative, or the first argument is positive and finite and the
+             second argument is negative infinity, then the result is the
+             double value closest to <i>pi</i>.</li>
+             <li>If the first argument is negative zero and the second argument
+             is negative, or the first argument is negative and finite and the
+             second argument is negative infinity, then the result is the
+             double value closest to -<i>pi</i>.</li>
+             <li>If the first argument is positive and the second argument is
+             positive zero or negative zero, or the first argument is positive
+             infinity and the second argument is finite, then the result is the
+             double value closest to <i>pi</i>/2.</li>
+             <li>If the first argument is negative and the second argument is
+             positive zero or negative zero, or the first argument is negative
+             infinity and the second argument is finite, then the result is the
+             double value closest to -<i>pi</i>/2.</li>
+             <li>If both arguments are positive infinity, then the result is the
+             double value closest to <i>pi</i>/4.</li>
+             <li>If the first argument is positive infinity and the second argument
+             is negative infinity, then the result is the double
+             value closest to 3*<i>pi</i>/4.</li>
+             <li>If the first argument is negative infinity and the second argument
+             is positive infinity, then the result is the double value
+             closest to -<i>pi</i>/4.</li>
+             <li>If both arguments are negative infinity, then the result is the
+             double value closest to -3*<i>pi</i>/4. </li> </ul>
+             A result must be within 2 ulps of the correctly rounded result.  Results
+             must be semi-monotonic.
+             </remarks>
+             <param name="y">the ordinate coordinate.</param>
+             <param name="x">the abscissa  coordinate.</param>
+             <returns> the theta component of the point (r, theta) in polar coordinates
+             that corresponds to the point (x, y) in Cartesian coordinates.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Round(System.Single)">
+            <summary>
+            Returns the closest int to the argument. 
+            </summary>
+            <remarks>
+            The result is rounded to an integer by adding 1/2, taking the
+            floor of the result, and casting the result to type int.
+            In other words, the result is equal to the value of the expression:
+            
+            <pre>(int)Math.floor(a + 0.5f)</pre>
+            
+            Special cases:
+            <ul>
+             <li>If the argument is NaN, the result is 0.</li>
+             <li>If the argument is negative infinity or any value less than or
+                 equal to the value of Integer.MIN_VALUE, the result is
+                 equal to the value of Integer.MIN_VALUE.</li>
+             <li>If the argument is positive infinity or any value greater than or
+                 equal to the value of Integer.MAX_VALUE, the result is
+                 equal to the value of Integer.MAX_VALUE.</li>
+            </ul>
+            </remarks>
+            <param name="a">a floating-point value to be rounded to an integer.</param>
+            <returns> value of the argument rounded to the nearest int value.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Round(System.Double)">
+            <summary>
+            Returns the closest long to the argument. 
+            </summary>
+            <remarks>
+            The result is rounded to an integer by adding 1/2, taking the floor of the
+            result, and casting the result to type long. In other
+            words, the result is equal to the value of the expression:
+            
+            <pre>(long)Math.floor(a + 0.5d)</pre>
+            
+            Special cases:
+            <ul>
+             <li>If the argument is NaN, the result is 0.</li>
+             <li>If the argument is negative infinity or any value less than or
+                 equal to the value of Long.MIN_VALUE, the result is
+                 equal to the value of Long.MIN_VALUE.</li>
+             <li>If the argument is positive infinity or any value greater than or
+                 equal to the value of Long.MAX_VALUE, the result is
+                 equal to the value of Long.MAX_VALUE.</li>
+            </ul>
+            </remarks>
+            <param name="a">a floating-point value to be rounded to a long.</param>
+            <returns>the value of the argument rounded to the nearest long value</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Exp(System.Double)">
+            <summary>
+            Exps the specified x.
+            </summary>
+            <param name="x">The x.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Exp1(System.Double)">
+             <summary>
+            Returns Euler's number <i>e</i> raised to the power of a double value. 
+             </summary>
+             <remarks>
+              Special cases:
+             <ul><li>If the argument is NaN, the result is NaN.</li>
+             <li>If the argument is positive infinity, then the result is
+             positive infinity.</li>
+             <li>If the argument is negative infinity, then the result is
+             positive zero.</li>  </ul> 
+             A result must be within 1 ulp of the correctly rounded result.  Results
+             must be semi-monotonic.
+             </remarks>
+             <param name="a">the exponent to raise e to.</param>
+             <returns>the value ea, where e is the base of the natural logarithms.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Log(System.Double)">
+            <summary>
+            Logs the specified x.
+            </summary>
+            <param name="x">The x.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Log2(System.Double)">
+            <summary>
+            Log2s the specified x.
+            </summary>
+            <param name="x">The x.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Log1(System.Double)">
+             <summary>
+            Returns the natural logarithm (base <i>e</i>) of a double value.  
+             </summary>
+             <remarks>
+             Special cases:
+             <ul><li>If the argument is NaN or less than zero, then the result
+             is NaN.</li>
+             <li>If the argument is positive infinity, then the result is
+             positive infinity.</li>
+             <li>If the argument is positive zero or negative zero, then the
+             result is negative infinity.</li>  </ul>
+             A result must be within 1 ulp of the correctly rounded result.  Results
+             must be semi-monotonic.
+             </remarks>
+             <param name="a">a number greater than 0.0</param>
+             <returns>the value ln a, the natural logarithm of a.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Pow(System.Double,System.Double)">
+             <summary>
+            Returns the value of the first argument raised to the power of the
+             second argument. 
+             </summary>
+             <param name="a">the base</param>
+             <param name="b"> the exponent.</param>
+             <returns>the value a<sup>b</sup>.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Asin(System.Double)">
+             <summary>
+            Returns the arc sine of an angle, in the range of -<i>pi</i>/2 through
+             <i>pi</i>/2.
+             </summary>
+             <remarks>
+              Special cases:
+             <ul><li>If the argument is NaN or its absolute value is greater
+             than 1, then the result is NaN. </li>
+             <li>If the argument is zero, then the result is a zero with the
+             same sign as the argument.</li>  </ul> 
+             A result must be within 1 ulp of the correctly rounded result.  Results
+             must be semi-monotonic.
+             </remarks>
+             <param name="a">the value whose arc sine is to be returned.</param>
+             <returns>the arc sine of the argument.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Acos(System.Double)">
+             <summary>
+            Returns the arc cosine of an angle, in the range of 0.0 through
+             <i>pi</i>.  
+             </summary>
+             <remarks>
+             Special case:
+             If the argument is NaN or its absolute value is greater
+             than 1, then the result is NaN.
+             A result must be within 1 ulp of the correctly rounded result.  Results
+             must be semi-monotonic.
+             </remarks>
+             <param name="a">the value whose arc cosine is to be returned.</param>
+             <returns>the arc cosine of the argument.</returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.Rint(System.Double)">
+            <summary>
+            Rints the specified a.
+            </summary>
+            <param name="a">A.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.MathEx.IEEERemainder(System.Double,System.Double)">
+             <summary>
+            Computes the remainder operation on two arguments as prescribed
+             by the IEEE 754 standard.
+             </summary>
+             <remarks>
+             The remainder value is mathematically equal to
+             f1-f2<i>n</i>,
+             where <i>n</i> is the mathematical integer closest to the exact
+             mathematical value of the quotient f1/f2, and if two
+             mathematical integers are equally close to f1/f2,
+             then <i>n</i> is the integer that is even. If the remainder is
+             zero, its sign is the same as the sign of the first argument.
+             Special cases:
+             <ul><li>If either argument is NaN, or the first argument is infinite,
+             or the second argument is positive zero or negative zero, then the
+             result is NaN.</li>
+             <li>If the first argument is finite and the second argument is
+             infinite, then the result is the same as the first argument.</li> </ul>
+             </remarks>
+             <param name="f1"> f1 the dividend.</param>
+             <param name="f2"> f2 the divisor</param>
+             <returns>the remainder when f1 is divided by f2</returns>
+        </member>
+        <member name="T:Mapdigit.Util.Utils">
+            <summary>
+            Utility class.
+            </summary>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.ShortToBytes(System.Int16,System.Boolean)">
+            <summary>
+            Returns a short converted to a byte array.
+            </summary>
+            <param name="l">a short number</param>
+            <param name="bigendian"> true if big-endian output</param>
+            <returns>endian byte array</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.IntToBytes(System.Int32,System.Boolean)">
+            <summary>
+            Returns an int converted to a byte array.
+            </summary>
+            <param name="l">an integer number</param>
+            <param name="bigendian">true if big-endian output</param>
+            <returns>endian byte array</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.LongToBytes(System.Int64,System.Boolean)">
+            <summary>
+            Returns an long converted to a byte array.
+            </summary>
+            <param name="l">a long integer number.</param>
+            <param name="bigendian">true if big-endian output</param>
+            <returns>endian byte array</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.BytesToShort(System.Byte[],System.Boolean)">
+            <summary>
+            Returns a short converted from a byte array.
+            </summary>
+            <param name="by">a byte array</param>
+            <param name="bigendian">true if big-endian output.</param>
+            <returns>short built from bytes</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.BytesToUShort(System.Byte[],System.Boolean)">
+            <summary>
+            Returns an int converted to from a byte array.
+            We have to get an int because in java we can only so represent
+            an unsigned short.
+            </summary>
+            <param name="by">by a byte array</param>
+            <param name="bigendian">true if big-endian output</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.DoubleToInt64Bits(System.Double)">
+            <summary>
+            Doubles to int64 bits.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.BytesToInt(System.Byte[],System.Boolean)">
+            <summary>
+            Returns an int converted to from a byte array.
+            We have to get an int because in java we can only so represent
+            an unsigned short.
+            </summary>
+            <param name="b">a byte array</param>
+            <param name="bigendian">true if big-endian output</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.BytesToLong(System.Byte[],System.Boolean)">
+            <summary>
+            Returns a long converted to from a byte array.
+            </summary>
+            <param name="b">a byte array</param>
+            <param name="bigendian">true if big-endian output</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.HexToInt(System.String)">
+            <summary>
+            Returns a int converted from a hexadecimal number
+            </summary>
+            <param name="s">s string representing a hexadecimal number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.UnsignShort(System.Int32)">
+            <summary>
+            It's just a hack to facilitate the short to byte array conversion
+            </summary>
+            <param name="s">a value in the unsigned short range 0 to 65535</param>
+            <returns>unsigned short</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.ByteArrayToHexString(System.Byte[])">
+            <summary>
+            Convert a byte[] array to readable string format. This makes the "hex" readable!
+            </summary>
+            <param name="input">buffer to convert to string format</param>
+            <returns>String buffer in String format</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.Explode(System.Char,System.String)">
+            <summary>
+            split string by separator and return String[] of elements
+            </summary>
+            <param name="separator">The separator.</param>
+            <param name="str">str entire string to split by separator</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.Replace(System.String[],System.String[],System.String)">
+            <summary>
+            replace all entries of pattern[N] with value replace[N]
+            length of pattern[] must equal to length of replace[]
+            </summary>
+            <param name="pattern">array of patterns to be replaced</param>
+            <param name="replace">array of values to be inserted instead of pattern[i].</param>
+            <param name="source">The source.</param>
+            <returns>result String with replaced values</returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.ReplaceString(System.String,System.String,System.String)">
+            <summary>
+            replace all entries of pattern with value replace
+            </summary>
+            <param name="pattern">pattern to be replaced.</param>
+            <param name="replace">The replace.</param>
+            <param name="source">The source.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.IsDouble(System.String)">
+            <summary>
+             check if the string is a double
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.IsInt32(System.String)">
+            <summary>
+             check if the string is a int32
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mapdigit.Util.Utils.IsNumber(System.String)">
+            <summary>
+             check if the string is a number
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

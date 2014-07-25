@@ -1,0 +1,5 @@
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Release\Mapdigit.Util.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\bin\Release\Mapdigit.Util.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Release\ResolveAssemblyReference.cache
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Release\Mapdigit.Util.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Util\obj\Release\Mapdigit.Util.pdb

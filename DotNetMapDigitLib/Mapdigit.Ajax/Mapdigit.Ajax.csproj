@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6708EF3-0CED-4430-8109-921A37A4BE31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mapdigit.Ajax</RootNamespace>
+    <AssemblyName>Mapdigit.Ajax</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>DotNetMapDigitLib</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:PushOk CVSSCC</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arg.cs" />
+    <Compile Include="BasicAuth.cs" />
+    <Compile Include="IRequestListener.cs" />
+    <Compile Include="Json\JSONArray.cs" />
+    <Compile Include="Json\JSONException.cs" />
+    <Compile Include="Json\JSONObject.cs" />
+    <Compile Include="Json\JSONPath.cs" />
+    <Compile Include="Json\JSONPathTokenizer.cs" />
+    <Compile Include="Json\IJSONString.cs" />
+    <Compile Include="Json\JSONStringer.cs" />
+    <Compile Include="Json\JSONTokener.cs" />
+    <Compile Include="Json\JSONWriter.cs" />
+    <Compile Include="Json\JSONXML.cs" />
+    <Compile Include="Json\JSONXMLTokener.cs" />
+    <Compile Include="Part.cs" />
+    <Compile Include="PostData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="Result.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mapdigit.Network\Mapdigit.Network.csproj">
+      <Project>{549EBCBD-8420-440D-BCA2-729D0CF8FC70}</Project>
+      <Name>Mapdigit.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mapdigit.Rms\Mapdigit.Rms.csproj">
+      <Project>{4B740F47-6DE0-4443-A0E3-9C6234013E21}</Project>
+      <Name>Mapdigit.Rms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mapdigit.Util\Mapdigit.Util.csproj">
+      <Project>{91C13559-0EE5-46E1-825E-FDF272BB009C}</Project>
+      <Name>Mapdigit.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

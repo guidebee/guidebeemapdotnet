@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EBCFBE0-8B60-49E9-A777-8A72BAD7DABF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mapdigit.Drawing</RootNamespace>
+    <AssemblyName>Mapdigit.Drawing</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>DotNetMapDigitLib</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:PushOk CVSSCC</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Mapdigit.Drawing.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Brush.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Core\BrushFP.cs" />
+    <Compile Include="Core\ColorFP.cs" />
+    <Compile Include="Core\GraphicsFP.cs" />
+    <Compile Include="Core\GraphicsPathDasherFP.cs" />
+    <Compile Include="Core\GraphicsPathFP.cs" />
+    <Compile Include="Core\GraphicsPathOutlineFP.cs" />
+    <Compile Include="Core\GraphicsPathRendererFP.cs" />
+    <Compile Include="Core\GraphicsPathSketchFP.cs" />
+    <Compile Include="Core\IGraphicsPathIteratorFP.cs" />
+    <Compile Include="Core\LinearGradientBrushFP.cs" />
+    <Compile Include="Core\LineFP.cs" />
+    <Compile Include="Core\MathFP.cs" />
+    <Compile Include="Core\MatrixFP.cs" />
+    <Compile Include="Core\PenFP.cs" />
+    <Compile Include="Core\PointFP.cs" />
+    <Compile Include="Core\RadialGradientBrushFP.cs" />
+    <Compile Include="Core\RectangleFP.cs" />
+    <Compile Include="Core\SingleFP.cs" />
+    <Compile Include="Core\SolidBrushFP.cs" />
+    <Compile Include="Core\TextureBrushFP.cs" />
+    <Compile Include="FontEx.cs" />
+    <Compile Include="Geometry\AffineTransform.cs" />
+    <Compile Include="Geometry\Arc.cs" />
+    <Compile Include="Geometry\ArcIterator.cs" />
+    <Compile Include="Geometry\Area.cs" />
+    <Compile Include="Geometry\AreaOp.cs" />
+    <Compile Include="Geometry\ChainEnd.cs" />
+    <Compile Include="Geometry\Crossings.cs" />
+    <Compile Include="Geometry\CubicCurve.cs" />
+    <Compile Include="Geometry\CubicIterator.cs" />
+    <Compile Include="Geometry\Curve.cs" />
+    <Compile Include="Geometry\CurveLink.cs" />
+    <Compile Include="Geometry\Dimension.cs" />
+    <Compile Include="Geometry\Edge.cs" />
+    <Compile Include="Geometry\Ellipse.cs" />
+    <Compile Include="Geometry\EllipseIterator.cs" />
+    <Compile Include="Geometry\FlatteningPathIterator.cs" />
+    <Compile Include="Geometry\IllegalPathStateException.cs" />
+    <Compile Include="Geometry\IShape.cs" />
+    <Compile Include="Geometry\Line.cs" />
+    <Compile Include="Geometry\LineIterator.cs" />
+    <Compile Include="Geometry\MathFP.cs" />
+    <Compile Include="Geometry\NoninvertibleTransformException.cs" />
+    <Compile Include="Geometry\Order0.cs" />
+    <Compile Include="Geometry\Order1.cs" />
+    <Compile Include="Geometry\Order2.cs" />
+    <Compile Include="Geometry\Order3.cs" />
+    <Compile Include="Geometry\Parser\AbstractParser.cs" />
+    <Compile Include="Geometry\Parser\NumberListParser.cs" />
+    <Compile Include="Geometry\Parser\NumberParser.cs" />
+    <Compile Include="Geometry\Parser\PathParser.cs" />
+    <Compile Include="Geometry\Parser\TransformListParser.cs" />
+    <Compile Include="Geometry\Path.cs" />
+    <Compile Include="Geometry\PathIterator.cs" />
+    <Compile Include="Geometry\Point.cs" />
+    <Compile Include="Geometry\Polygon.cs" />
+    <Compile Include="Geometry\Polyline.cs" />
+    <Compile Include="Geometry\QuadCurve.cs" />
+    <Compile Include="Geometry\QuadIterator.cs" />
+    <Compile Include="Geometry\Rectangle.cs" />
+    <Compile Include="Geometry\RectangularShape.cs" />
+    <Compile Include="Geometry\RectIterator.cs" />
+    <Compile Include="Geometry\RoundRectangle.cs" />
+    <Compile Include="Geometry\RoundRectIterator.cs" />
+    <Compile Include="Unicode2Gb2312.cs" />
+    <Compile Include="Graphics2D.cs" />
+    <Compile Include="LinearGradientBrush.cs" />
+    <Compile Include="Pen.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadialGradientBrush.cs" />
+    <Compile Include="SolidBrush.cs" />
+    <Compile Include="TextureBrush.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mapdigit.Util\Mapdigit.Util.csproj">
+      <Project>{91C13559-0EE5-46E1-825E-FDF272BB009C}</Project>
+      <Name>Mapdigit.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\bin\Release\Graphics2DExample.exe
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\bin\Release\Graphics2DExample.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\bin\Release\Mapdigit.Drawing.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\bin\Release\Mapdigit.Util.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\bin\Release\Mapdigit.Util.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\bin\Release\Mapdigit.Drawing.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\obj\Release\ResolveAssemblyReference.cache
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\obj\Release\Graphics2DExample.Form1.resources
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\obj\Release\Graphics2DExample.Properties.Resources.resources
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\obj\Release\Graphics2DExample.csproj.GenerateResource.Cache
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\obj\Release\Graphics2DExample.exe
+D:\CVSMapDigit\DotNetMapDigitLib\Graphics2DExample\obj\Release\Graphics2DExample.pdb

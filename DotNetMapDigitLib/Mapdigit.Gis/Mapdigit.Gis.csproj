@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15AE74D8-3CC8-4F78-8734-A058A7063774}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mapdigit.Gis</RootNamespace>
+    <AssemblyName>Mapdigit.Gis</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>DotNetMapDigitLib</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:PushOk CVSSCC</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Mapdigit.Gis.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DigitalMap.cs" />
+    <Compile Include="Drawing\AbstractGraphicsFactory.cs" />
+    <Compile Include="Drawing\IFont.cs" />
+    <Compile Include="Drawing\IGraphics.cs" />
+    <Compile Include="Drawing\IImage.cs" />
+    <Compile Include="Geometry\GeoBounds.cs" />
+    <Compile Include="Geometry\GeoLatLng.cs" />
+    <Compile Include="Geometry\GeoLatLngBounds.cs" />
+    <Compile Include="Geometry\GeoPoint.cs" />
+    <Compile Include="Geometry\GeoPolygon.cs" />
+    <Compile Include="Geometry\GeoPolyline.cs" />
+    <Compile Include="Geometry\GeoSize.cs" />
+    <Compile Include="Geometry\GreateCircleCalculator.cs" />
+    <Compile Include="Geometry\PolylineEncoder.cs" />
+    <Compile Include="Location\ChinaMapOffset.cs" />
+    <Compile Include="Location\Coordinates.cs" />
+    <Compile Include="Location\ILocationListener.cs" />
+    <Compile Include="Location\Location.cs" />
+    <Compile Include="Location\LocationException.cs" />
+    <Compile Include="Location\LocationProvider.cs" />
+    <Compile Include="Location\Nmea\INmeaDataListener.cs" />
+    <Compile Include="Location\Nmea\NMEACompatibleLocationProvider.cs" />
+    <Compile Include="Location\Nmea\NmeaDataRecord.cs" />
+    <Compile Include="Location\Nmea\NmeaGPGGADataRecord.cs" />
+    <Compile Include="Location\Nmea\NmeaGPGLLDataRecord.cs" />
+    <Compile Include="Location\Nmea\NmeaGPGSADataRecord.cs" />
+    <Compile Include="Location\Nmea\NmeaGPGSVDataRecord.cs" />
+    <Compile Include="Location\Nmea\NmeaGPRMCDataRecord.cs" />
+    <Compile Include="Location\Nmea\NmeaGPVTGDataRecord.cs" />
+    <Compile Include="Location\Nmea\NmeaParser.cs" />
+    <Compile Include="Location\Nmea\Satellite.cs" />
+    <Compile Include="Location\Orientation.cs" />
+    <Compile Include="Location\QualifiedCoordinates.cs" />
+    <Compile Include="MapBrush.cs" />
+    <Compile Include="MapCollection.cs" />
+    <Compile Include="MapDirection.cs" />
+    <Compile Include="MapDirectionCommandElement.cs" />
+    <Compile Include="MapDirectionCommandType.cs" />
+    <Compile Include="MapLayer.cs" />
+    <Compile Include="MapLayerContainer.cs" />
+    <Compile Include="MapMultiPline.cs" />
+    <Compile Include="MapMultiPoint.cs" />
+    <Compile Include="MapMultiRegion.cs" />
+    <Compile Include="MapNoneObject.cs" />
+    <Compile Include="MapObject.cs" />
+    <Compile Include="MapPen.cs" />
+    <Compile Include="MapPline.cs" />
+    <Compile Include="MapPoint.cs" />
+    <Compile Include="MapRegion.cs" />
+    <Compile Include="MapRoute.cs" />
+    <Compile Include="MapStep.cs" />
+    <Compile Include="MapSymbol.cs" />
+    <Compile Include="MapText.cs" />
+    <Compile Include="Navigation\INavigationListener.cs" />
+    <Compile Include="Navigation\IVoiceCommandListener.cs" />
+    <Compile Include="Navigation\NavigationEngine.cs" />
+    <Compile Include="Navigation\SimulatedDirectionLocationProvider.cs" />
+    <Compile Include="Navigation\VoiceCommandArg.cs" />
+    <Compile Include="Navigation\VoiceCommandType.cs" />
+    <Compile Include="Navigation\WalkOnRoute.cs" />
+    <Compile Include="Navigation\WayPoint.cs" />
+    <Compile Include="Projection\AzimuthalProjection.cs" />
+    <Compile Include="Projection\Ellipsoid.cs" />
+    <Compile Include="Projection\MapMath.cs" />
+    <Compile Include="Projection\OrthographicAzimuthalProjection.cs" />
+    <Compile Include="Projection\Projection.cs" />
+    <Compile Include="Projection\ProjectionException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raster\ArrayTiledMapTileEngine.cs" />
+    <Compile Include="Raster\ICustomMapType.cs" />
+    <Compile Include="Raster\ImageTileIndex.cs" />
+    <Compile Include="Raster\IMapDrawingListener.cs" />
+    <Compile Include="Raster\IMapTileReadyListener.cs" />
+    <Compile Include="Raster\IReaderListener.cs" />
+    <Compile Include="Raster\MapConfiguration.cs" />
+    <Compile Include="Raster\MapDirectionRenderer.cs" />
+    <Compile Include="Raster\MapTileAbstractReader.cs" />
+    <Compile Include="Raster\MapTileDownloader.cs" />
+    <Compile Include="Raster\MapTileDownloadManager.cs" />
+    <Compile Include="Raster\MapTiledZone.cs" />
+    <Compile Include="Raster\MapTileEngine.cs" />
+    <Compile Include="Raster\MapTileStreamReader.cs" />
+    <Compile Include="Raster\MapType.cs" />
+    <Compile Include="Raster\RasterMap.cs" />
+    <Compile Include="Raster\TiledMapTileEngine.cs" />
+    <Compile Include="Service\CellIdGeocoder.cs" />
+    <Compile Include="Service\CloudMade\CClientGeocoder.cs" />
+    <Compile Include="Service\CloudMade\CDirectionCommandAnalyzer.cs" />
+    <Compile Include="Service\CloudMade\CDirections.cs" />
+    <Compile Include="Service\CloudMade\CLocalSearch.cs" />
+    <Compile Include="Service\CloudMade\CloudMadeMapService.cs" />
+    <Compile Include="Service\CloudMade\CReverseClientGeocoder.cs" />
+    <Compile Include="Service\DigitalMapService.cs" />
+    <Compile Include="Service\Google\GClientGeocoder.cs" />
+    <Compile Include="Service\Google\GDirectionCommandAnalyzer.cs" />
+    <Compile Include="Service\Google\GDirections.cs" />
+    <Compile Include="Service\Google\GLocalSearch.cs" />
+    <Compile Include="Service\Google\GoogleMapService.cs" />
+    <Compile Include="Service\Google\GReverseClientGeocoder.cs" />
+    <Compile Include="Service\ICellIdGeocoder.cs" />
+    <Compile Include="Service\IDirectionQuery.cs" />
+    <Compile Include="Service\IGeocoder.cs" />
+    <Compile Include="Service\IGeocodingListener.cs" />
+    <Compile Include="Service\IIpAddressGeocoder.cs" />
+    <Compile Include="Service\IIpAddressGeocodingListener.cs" />
+    <Compile Include="Service\ILocalSearch.cs" />
+    <Compile Include="Service\IpAddressGeocoder.cs" />
+    <Compile Include="Service\IpAddressLocation.cs" />
+    <Compile Include="Service\IReverseGeocoder.cs" />
+    <Compile Include="Service\IReverseGeocodingListener.cs" />
+    <Compile Include="Service\IRoutingListener.cs" />
+    <Compile Include="Service\MapAbc\MapAbcMapService.cs" />
+    <Compile Include="Service\MapAbc\MClientGeocoder.cs" />
+    <Compile Include="Service\MapAbc\MDirectionCommandAnalyzer.cs" />
+    <Compile Include="Service\MapAbc\MDirections.cs" />
+    <Compile Include="Service\MapAbc\MLocalSearch.cs" />
+    <Compile Include="Service\MapAbc\MReverseClientGeocoder.cs" />
+    <Compile Include="Service\MapKey.cs" />
+    <Compile Include="Service\MapKeyRepository.cs" />
+    <Compile Include="Service\SearchOptions.cs" />
+    <Compile Include="TileSystem.cs" />
+    <Compile Include="Vector\DataField.cs" />
+    <Compile Include="Vector\DataRowValue.cs" />
+    <Compile Include="Vector\DataTable.cs" />
+    <Compile Include="Vector\FindCondition.cs" />
+    <Compile Include="Vector\FindConditions.cs" />
+    <Compile Include="Vector\GeoSet.cs" />
+    <Compile Include="Vector\MapFeature.cs" />
+    <Compile Include="Vector\MapFeatureLayer.cs" />
+    <Compile Include="Vector\MapFile\GB2312.cs" />
+    <Compile Include="Vector\MapFile\GeoData.cs" />
+    <Compile Include="Vector\MapFile\Header.cs" />
+    <Compile Include="Vector\MapFile\MapFile.cs" />
+    <Compile Include="Vector\MapFile\RecordIndex.cs" />
+    <Compile Include="Vector\MapFile\RTreeIndex.cs" />
+    <Compile Include="Vector\MapFile\Section.cs" />
+    <Compile Include="Vector\MapFile\StringData.cs" />
+    <Compile Include="Vector\MapFile\StringIndex.cs" />
+    <Compile Include="Vector\MapFile\TabularData.cs" />
+    <Compile Include="Vector\PNGEncoder.cs" />
+    <Compile Include="Vector\RTree\AbstractNode.cs" />
+    <Compile Include="Vector\RTree\Comparator.cs" />
+    <Compile Include="Vector\RTree\Data.cs" />
+    <Compile Include="Vector\RTree\Enumeration.cs" />
+    <Compile Include="Vector\RTree\HyperCube.cs" />
+    <Compile Include="Vector\RTree\Index.cs" />
+    <Compile Include="Vector\RTree\Leaf.cs" />
+    <Compile Include="Vector\RTree\Node.cs" />
+    <Compile Include="Vector\RTree\PageFaultException.cs" />
+    <Compile Include="Vector\RTree\PageFile.cs" />
+    <Compile Include="Vector\RTree\PersistentPageFile.cs" />
+    <Compile Include="Vector\RTree\Point.cs" />
+    <Compile Include="Vector\RTree\RTree.cs" />
+    <Compile Include="Vector\SutherlandHodgman.cs" />
+    <Compile Include="Vector\VectorMap.cs" />
+    <Compile Include="Vector\VectorMapAbstractCanvas.cs" />
+    <Compile Include="Vector\VectorMapCanvas.cs" />
+    <Compile Include="Vector\VectorMapRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mapdigit.Ajax\Mapdigit.Ajax.csproj">
+      <Project>{D6708EF3-0CED-4430-8109-921A37A4BE31}</Project>
+      <Name>Mapdigit.Ajax</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mapdigit.Drawing\Mapdigit.Drawing.csproj">
+      <Project>{5EBCFBE0-8B60-49E9-A777-8A72BAD7DABF}</Project>
+      <Name>Mapdigit.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mapdigit.Network\Mapdigit.Network.csproj">
+      <Project>{549EBCBD-8420-440D-BCA2-729D0CF8FC70}</Project>
+      <Name>Mapdigit.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mapdigit.Rms\Mapdigit.Rms.csproj">
+      <Project>{4B740F47-6DE0-4443-A0E3-9C6234013E21}</Project>
+      <Name>Mapdigit.Rms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mapdigit.Util\Mapdigit.Util.csproj">
+      <Project>{91C13559-0EE5-46E1-825E-FDF272BB009C}</Project>
+      <Name>Mapdigit.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

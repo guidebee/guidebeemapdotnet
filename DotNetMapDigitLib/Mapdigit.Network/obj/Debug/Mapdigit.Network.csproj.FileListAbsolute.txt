@@ -1,0 +1,14 @@
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\bin\Debug\Mapdigit.Network.dll
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\bin\Debug\Mapdigit.Network.pdb
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\ResolveAssemblyReference.cache
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\Mapdigit.Network.dll
+C:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\Mapdigit.Network.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\bin\Debug\Mapdigit.Network.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\bin\Debug\Mapdigit.Network.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\ResolveAssemblyReference.cache
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\Mapdigit.Network.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\Mapdigit.Network.pdb
+D:\Temp\DotNetMapDigitLib\Mapdigit.Network\bin\Debug\Mapdigit.Network.dll
+D:\Temp\DotNetMapDigitLib\Mapdigit.Network\bin\Debug\Mapdigit.Network.pdb
+D:\Temp\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\Mapdigit.Network.dll
+D:\Temp\DotNetMapDigitLib\Mapdigit.Network\obj\Debug\Mapdigit.Network.pdb

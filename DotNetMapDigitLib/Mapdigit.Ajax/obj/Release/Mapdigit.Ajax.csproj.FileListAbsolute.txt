@@ -1,0 +1,11 @@
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Ajax.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Ajax.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Network.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Rms.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Util.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Network.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Util.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\bin\Release\Mapdigit.Rms.pdb
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\obj\Release\ResolveAssemblyReference.cache
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\obj\Release\Mapdigit.Ajax.dll
+D:\CVSMapDigit\DotNetMapDigitLib\Mapdigit.Ajax\obj\Release\Mapdigit.Ajax.pdb
