@@ -1,0 +1,37 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="B7DFB545-EBF2-4B2F-9E4A-113FBD894E43/f:FrmMapType.cs" caret="563" fromTop="3" />
+      <File id="B7DFB545-EBF2-4B2F-9E4A-113FBD894E43/f:Form1.cs" caret="2643" fromTop="13" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B7DFB545-EBF2-4B2F-9E4A-113FBD894E43/f:Form1.cs" caret="3244" fromTop="27" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Mapdigit" priority="0" />
+      <Item value="Gis" priority="0" />
+      <Item value="Raster" priority="0" />
+      <Item value="MapType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Mapdigit.Gis.Raster.MapType">
+      <Item value="UpdateMapTileUrl" priority="0" />
+      <Item value="GoogleMap" priority="0" />
+      <Item value="GoogleHybrid" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
